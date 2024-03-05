@@ -26,7 +26,7 @@
 // #define V6_330_TITAN_NO_TMC 1
 // #define V6_330_NO_TITAN_TMC 1
 // #define V6_330_NO_TITAN_NO_TMC 1
-// #define V6_400_TITAN_TMC 1
+#define V6_400_TITAN_TMC 1
 // #define V6_400_NO_TITAN_TMC 1
 // #define V6_500_TITAN_TMC 1
 
@@ -57,7 +57,7 @@
 
 // #define BTT_SKR_TURBO_330_NO_TITAN_TMC_2209_UART 1
 
-// #define TFT_LVGL_UI
+#define TFT_LVGL_UI
 // #define TFT_CLASSIC_UI
 // #define TFT_COLOR_UI
 
@@ -1727,9 +1727,9 @@
 #if ENABLED(FILAMENT_RUNOUT_SENSOR)
   #define FIL_RUNOUT_ENABLED_DEFAULT true // Enable the sensor on startup. Override with M412 followed by M500.
   #define NUM_RUNOUT_SENSORS   1          // Number of sensors, up to one per extruder. Define a FIL_RUNOUT#_PIN for each.
-  #define FIL_RUNOUT_STATE     HIGH        // Pin state indicating that filament is NOT present.
-  // #define FIL_RUNOUT_PULLUP               // Use internal pullup for filament runout pins.
-  #define FIL_RUNOUT_PULLDOWN           // Use internal pulldown for filament runout pins.
+  #define FIL_RUNOUT_STATE     LOW        // Pin state indicating that filament is NOT present.
+  #define FIL_RUNOUT_PULLUP               // Use internal pullup for filament runout pins.
+  // #define FIL_RUNOUT_PULLDOWN           // Use internal pulldown for filament runout pins.
 
   // Override individually if the runout sensors vary
   //#define FIL_RUNOUT1_STATE LOW
